@@ -27,13 +27,9 @@ class Timestamps {
 
         int deltaSeconds = secondTimestamp - firstTimestamp;
 
-        if(deltaSeconds > 0)
-        {
+        
           System.out.print(deltaSeconds);
-        }else
-        {
-          System.out.print("you have gone back in time.");
-        }
+        
         
 
         // closing the scanner object
