@@ -26,7 +26,7 @@ class StudentDesks {
         studentDesk1 = studentDesk1 / 2;
         studentDesk2 = studentDesk2 / 2;
         studentDesk3 = studentDesk3 / 2;
-        System.out.print("desks for class 1: " + studentDesk1 + " desks for class 2: " + studentDesk2 + " desks for class 3: " + studentDesk3);
+        System.out.print(studentDesk1 + studentDesk2 + studentDesk3);
         // closing the scanner object
         scanner.close();
     }
