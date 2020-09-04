@@ -29,10 +29,10 @@ class Timestamps {
 
         if(deltaSeconds > 0)
         {
-          System.out.println(deltaSeconds);
+          System.out.print(deltaSeconds);
         }else
         {
-          System.out.println("you have gone back in time.");
+          System.out.print("you have gone back in time.");
         }
         
 
