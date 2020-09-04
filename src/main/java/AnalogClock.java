@@ -7,12 +7,12 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
+        int angle = scanner.nextInt();
 
-
-        /*
-         *  your code goes here
-         */
-
+        int currentHourDegree = angle % 12;
+        System.out.println(currentHourDegree);
+        int currentMinuteDegre = currentHourDegree * 12;
+        System.out.println(currentMinuteDegre);  
         // closing the scanner object
         scanner.close();
     }

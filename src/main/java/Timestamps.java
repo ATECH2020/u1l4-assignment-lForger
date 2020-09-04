@@ -15,10 +15,26 @@ class Timestamps {
         int seconds2 = scanner.nextInt();
 
 
-        /*
-         *  your code goes here
-         */
+        int tempSeconds = 0;
+        tempSeconds = hours1 *60*60;
+        tempSeconds = tempSeconds + minutes1 *60;
+        tempSeconds = tempSeconds + seconds1;
 
+        int tempSeconds2 = 0;
+        tempSeconds2 = hours2 *60*60;
+        tempSeconds2 = tempSeconds2 + minutes2 *60;
+        tempSeconds2 = tempSeconds2 + seconds2;
+
+        int finalSeconds = tempSeconds2 - tempSeconds;
+
+        if(tempSeconds > 0)
+        {
+          System.out.println(finalSeconds);
+        }else
+        {
+          System.out.println("you have gone back in time.");
+        }
+        
 
         // closing the scanner object
         scanner.close();
