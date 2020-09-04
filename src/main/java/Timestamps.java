@@ -15,21 +15,21 @@ class Timestamps {
         int seconds2 = scanner.nextInt();
 
 
-        int tempSeconds = 0;
-        tempSeconds = hours1 *60*60;
-        tempSeconds = tempSeconds + minutes1 *60;
-        tempSeconds = tempSeconds + seconds1;
+        int firstTimestamp = 0;
+        firstTimestamp = hours1 *60*60;
+        firstTimestamp = firstTimestamp + minutes1 *60;
+        firstTimestamp = firstTimestamp + seconds1;
 
-        int tempSeconds2 = 0;
-        tempSeconds2 = hours2 *60*60;
-        tempSeconds2 = tempSeconds2 + minutes2 *60;
-        tempSeconds2 = tempSeconds2 + seconds2;
+        int secondTimestamp = 0;
+        secondTimestamp = hours2 *60*60;
+        secondTimestamp = secondTimestamp + minutes2 *60;
+        secondTimestamp = secondTimestamp + seconds2;
 
-        int finalSeconds = tempSeconds2 - tempSeconds;
+        int deltaSeconds = secondTimestamp - firstTimestamp;
 
-        if(tempSeconds > 0)
+        if(deltaSeconds > 0)
         {
-          System.out.println(finalSeconds);
+          System.out.println(deltaSeconds);
         }else
         {
           System.out.println("you have gone back in time.");
