@@ -15,10 +15,22 @@ class Timestamps {
         int seconds2 = scanner.nextInt();
 
 
-        /*
-         *  your code goes here
-         */
+        int firstTimestamp = 0;
+        firstTimestamp = hours1 *60*60;
+        firstTimestamp = firstTimestamp + minutes1 *60;
+        firstTimestamp = firstTimestamp + seconds1;
 
+        int secondTimestamp = 0;
+        secondTimestamp = hours2 *60*60;
+        secondTimestamp = secondTimestamp + minutes2 *60;
+        secondTimestamp = secondTimestamp + seconds2;
+
+        int deltaSeconds = secondTimestamp - firstTimestamp;
+
+        
+          System.out.print(deltaSeconds);
+        
+        
 
         // closing the scanner object
         scanner.close();
